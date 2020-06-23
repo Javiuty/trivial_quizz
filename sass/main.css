@@ -1,3 +1,73 @@
+@-webkit-keyframes pulse_animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse_animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -121,78 +191,21 @@ body {
           transform: translateY(1px);
 }
 
-@-webkit-keyframes pulse_animation {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  30% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40% {
-    -webkit-transform: scale(1.08);
-            transform: scale(1.08);
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  60% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  70% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  80% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes pulse_animation {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  30% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40% {
-    -webkit-transform: scale(1.08);
-            transform: scale(1.08);
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  60% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  70% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  80% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-.geografia__contenedor-main {
-  border: 2px solid black;
-  padding: 10rem 5rem;
+.geografia__pregunta {
+  border: 4px groove black;
+  height: 10rem;
+  width: 70%;
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+.geografia {
+    
+    &__pregunta {
+        border: 4px groove black;
+        height: 10rem;
+        width: 70%;
+        margin: 5rem auto;
+        @include centrado;
+        font-size:2rem;
+        font-weight: 700;
+
+    }
+
+
+}
