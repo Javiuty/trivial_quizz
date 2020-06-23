@@ -190,4 +190,9 @@ body {
             transform: scale(1);
   }
 }
+
+.geografia__contenedor-main {
+  border: 2px solid black;
+  padding: 10rem 5rem;
+}
 /*# sourceMappingURL=main.css.map */
