@@ -207,5 +207,51 @@ body {
           align-items: center;
   font-size: 2rem;
   font-weight: 700;
+  border-radius: 3px;
+}
+
+.geografia__contenedor-respuestas {
+  height: 45rem;
+  width: 70%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.geografia__respuestas {
+  border: 3px groove black;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 3px;
+}
+
+.geografia__respuestas:hover {
+  -webkit-box-shadow: inset 0px 1px 5px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 1px 5px 4px rgba(0, 0, 0, 0.75);
+  border: none;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.geografia__respuestas:active {
+  color: grey;
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
 }
 /*# sourceMappingURL=main.css.map */
