@@ -11,11 +11,12 @@ fetch(
 
 //Función donde guardamos los datos obtenidos del fetch
 function showData(data) {
+  //Declaramos variables globales
   let totalScore = 0;
   let phase = 0;
   console.log(data);
+
   let container = document.getElementById("geografia__contenedor-main");
-  
   container.innerHTML = data.results[phase].question;
   
   let respuesta1 = document.getElementById("respuesta-1");
@@ -25,10 +26,14 @@ function showData(data) {
 
   let puntos = document.querySelector(".score__puntos");
 
-  refresh()
+  let scorePuntos = document.getElementById("score-puntos")
+  let scoreBack = document.querySelector(".score__back");
 
+  refresh()
+  //Función que renderiza las preguntas y respuestas
   function refresh() {
     container.innerHTML = data.results[phase].question;
+
     respuesta1.innerHTML = data.results[phase].incorrect_answers[0];
     respuesta2.innerHTML = data.results[phase].correct_answer;
     respuesta3.innerHTML = data.results[phase].incorrect_answers[1];
@@ -38,12 +43,9 @@ function showData(data) {
 
     phase;
     totalScore;
-
-    console.log("Esto es el total Score",totalScore);
-    console.log("Esto es la phase", phase);
   }
 
-  
+  //AddEventListener de todas las respuestas
 
   respuesta1.addEventListener("click", function() {
       // Chequear que sea verdadera
@@ -84,8 +86,7 @@ respuesta4.addEventListener("click", function() {
     }
 
 })
-
-
+    //Funcion en caso de acierto
     function acertado() {
         totalScore = totalScore + 10; 
         
@@ -95,12 +96,8 @@ respuesta4.addEventListener("click", function() {
         } else {
             finDelJuego()
         }
-
-        
-
-        
     }
-
+    //Funcion en caso de error
     function errado() {
         if(phase < 9) {
             phase++
@@ -110,9 +107,14 @@ respuesta4.addEventListener("click", function() {
         }
 
     }
-
+    //Después de diez rondas, cuando se acaba el juego
     function finDelJuego() {
-        document.body.innerHTML = totalScore;
+        puntos.innerHTML = totalScore;
+        scoreBack.style.opacity = "1";
+        scoreBack.style.zIndex = "20";
+        document.body.style.backgroundColor = "black"
+        scorePuntos.innerHTML = totalScore;
+        
     }
 
 
