@@ -18,11 +18,15 @@ function showData(data) {
 
   let container = document.getElementById("geografia__contenedor-main");
   container.innerHTML = data.results[phase].question;
-  
+/* 
+  let numerosRandom = [1,2,3,4]
+  let newNumbers = numerosRandom.sort(() => Math.random() - 0.5); */
+
   let respuesta1 = document.getElementById("respuesta-1");
   let respuesta2 = document.getElementById("respuesta-2");
   let respuesta3 = document.getElementById("respuesta-3");
   let respuesta4 = document.getElementById("respuesta-4");
+        
 
   let puntos = document.querySelector(".score__puntos");
 
@@ -33,7 +37,7 @@ function showData(data) {
   //Función que renderiza las preguntas y respuestas
   function refresh() {
     container.innerHTML = data.results[phase].question;
-
+   
     respuesta1.innerHTML = data.results[phase].incorrect_answers[0];
     respuesta2.innerHTML = data.results[phase].correct_answer;
     respuesta3.innerHTML = data.results[phase].incorrect_answers[1];
@@ -43,6 +47,7 @@ function showData(data) {
 
     phase;
     totalScore;
+
   }
 
   //AddEventListener de todas las respuestas
