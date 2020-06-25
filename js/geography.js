@@ -37,11 +37,22 @@ function showData(data) {
   //Función que renderiza las preguntas y respuestas
   function refresh() {
     container.innerHTML = data.results[phase].question;
-   
-    respuesta1.innerHTML = data.results[phase].incorrect_answers[0];
-    respuesta2.innerHTML = data.results[phase].correct_answer;
-    respuesta3.innerHTML = data.results[phase].incorrect_answers[1];
-    respuesta4.innerHTML = data.results[phase].incorrect_answers[2];
+
+    //Hacer que se coloquen de forma Random las respuestas
+    let uno = data.results[phase].incorrect_answers[0]
+    let dos = data.results[phase].correct_answer
+    let tres = data.results[phase].incorrect_answers[1]
+    let cuatro = data.results[phase].incorrect_answers[2]
+
+    let numerosRandom = [uno,dos,tres,cuatro]
+    let newNumbers = numerosRandom.sort(function() {
+        return 0.5 - Math.random();
+    });
+
+    respuesta1.innerHTML = newNumbers[0]
+    respuesta2.innerHTML = newNumbers[1]
+    respuesta3.innerHTML = newNumbers[2]
+    respuesta4.innerHTML = newNumbers[3]
     
     puntos.innerHTML = totalScore;
 
