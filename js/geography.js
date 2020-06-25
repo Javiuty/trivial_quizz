@@ -57,8 +57,7 @@ function showData(data) {
     puntos.innerHTML = totalScore;
 
     phase;
-    totalScore;
-
+    totalScore; 
   }
 
   //AddEventListener de todas las respuestas
@@ -69,6 +68,7 @@ function showData(data) {
           acertado()
       } else {
           errado()
+          
       }
 
   })
@@ -105,7 +105,7 @@ respuesta4.addEventListener("click", function() {
     //Funcion en caso de acierto
     function acertado() {
         totalScore = totalScore + 10; 
-        
+
         if (phase < 9) {
             phase++
             refresh();
@@ -132,6 +132,8 @@ respuesta4.addEventListener("click", function() {
         scorePuntos.innerHTML = totalScore;
         
     }
+
+
 
 
   
