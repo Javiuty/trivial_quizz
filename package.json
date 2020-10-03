@@ -6,8 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javiuty/trivial_quizz.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Javiuty/trivial_quizz/issues"
+  },
+  "homepage": "https://github.com/Javiuty/trivial_quizz#readme",
   "dependencies": {
     "node-sass": "^4.14.1"
   }
