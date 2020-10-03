@@ -1,9 +1,6 @@
 :root {
-  --color-primary: #131932;
-  --color-secondary: #0eca9a;
-  --color-tertiary: #d4d5d8;
-
-  --color-bg: #eaf0f3;
+  --color-primary: #2f0743;
+  --color-secondary: #a39700;
 }
 
 * {
@@ -27,7 +24,8 @@ body {
   width: 36rem;
   margin: 0 auto;
   border-radius: 15px;
-  background-color: var(--color-primary);
+  background: linear-gradient(to top, #41295a, #2f0743);
+  color: var(--color-secondary);
 
   display: flex;
   flex-direction: column;

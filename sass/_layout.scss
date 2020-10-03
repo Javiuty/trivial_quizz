@@ -1,16 +1,13 @@
 .header {
   flex: 0 0 30%;
-  border: 2px solid green;
+  padding: 0 1rem;
 }
 
 .categories {
   flex: 0 0 70%;
-  border: 2px solid orangered;
-  background-color: var(--color-bg);
 
   &__header {
     padding: 1rem 1rem;
-    color: 000;
     font-size: 1.2rem;
 
     display: flex;
@@ -18,25 +15,49 @@
     align-items: center;
 
     h2 {
+      font-size: 1.9rem;
     }
 
     h3 {
-      color: var(--color-secondary);
-      background-color: #c1e8f1;
       padding: 0.5rem 0.8rem;
       cursor: pointer;
       border-radius: 5px;
+      border: 1px solid currentColor;
     }
   }
 
   &__body {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(2, 20vh);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+
+  &__category {
+    height: 80%;
+    width: 90%;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.75);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
     svg {
-      width: 4rem;
-      height: 4rem;
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
     }
   }
 }
