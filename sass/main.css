@@ -22,8 +22,8 @@ body {
 
 .content {
   border: 3px solid black;
-  height: 74rem;
-  width: 36rem;
+  height: 100vh;
+  width: 100vw;
   margin: 0 auto;
   border-radius: 15px;
   background: -webkit-gradient(linear, left bottom, left top, from(#41295a), to(#2f0743));
@@ -76,7 +76,7 @@ body {
   border: 1px solid currentColor;
 }
 
-.categories__header h3:hover, .categories__header h3:focus, .categories__header h3:active, .categories__header h3:visited {
+.categories__header h3:hover {
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }

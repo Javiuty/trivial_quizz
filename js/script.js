@@ -24,3 +24,9 @@ function expand(event) {
     hide3.classList.add("hide3");
   }
 }
+
+categoriesBody.addEventListener("click", initGame);
+
+console.log(document.body.childNodes[1].childNodes[1]);
+
+function initGame(event) {}

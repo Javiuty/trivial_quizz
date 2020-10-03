@@ -24,10 +24,7 @@
       border-radius: 5px;
       border: 1px solid currentColor;
 
-      &:hover,
-      &:focus,
-      &:active,
-      &:visited {
+      &:hover {
         background-color: var(--color-secondary);
         color: var(--color-primary);
       }
