@@ -23,6 +23,14 @@
       cursor: pointer;
       border-radius: 5px;
       border: 1px solid currentColor;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:visited {
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
+      }
     }
   }
 
@@ -34,6 +42,7 @@
     align-items: center;
     justify-items: center;
     align-content: center;
+    transition: all 0.3s;
   }
 
   &__category {

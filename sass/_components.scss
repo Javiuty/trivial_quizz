@@ -1,3 +1,48 @@
-// .icon-science {
-//   fill: #237a57;
-// }
+.icon-animals {
+  fill: #237a57;
+}
+
+.icon-sports {
+  fill: orange;
+}
+
+.icon-games {
+  fill: red;
+}
+
+.icon-history {
+  fill: gray;
+}
+
+.icon-geography {
+  fill: blue;
+}
+
+.icon-science,
+.icon-cartoon {
+  fill: rgb(160, 160, 3);
+}
+
+.icon-vehicles {
+  fill: #b94141;
+}
+
+.ampliar {
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  grid-template-rows: repeat(3, 20vh);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.hide1,
+.hide2,
+.hide3 {
+  display: none;
+}
+
+.show {
+  display: unset;
+}

@@ -76,6 +76,11 @@ body {
   border: 1px solid currentColor;
 }
 
+.categories__header h3:hover, .categories__header h3:focus, .categories__header h3:active, .categories__header h3:visited {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
 .categories__body {
   display: -ms-grid;
   display: grid;
@@ -92,6 +97,8 @@ body {
   justify-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .categories__category {
@@ -126,5 +133,62 @@ body {
 
 .categories__category h4 {
   font-size: 1.5rem;
+}
+
+.icon-animals {
+  fill: #237a57;
+}
+
+.icon-sports {
+  fill: orange;
+}
+
+.icon-games {
+  fill: red;
+}
+
+.icon-history {
+  fill: gray;
+}
+
+.icon-geography {
+  fill: blue;
+}
+
+.icon-science,
+.icon-cartoon {
+  fill: #a0a003;
+}
+
+.icon-vehicles {
+  fill: #b94141;
+}
+
+.ampliar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30vw)[3];
+      grid-template-columns: repeat(3, 30vw);
+  -ms-grid-rows: (20vh)[3];
+      grid-template-rows: repeat(3, 20vh);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.hide1,
+.hide2,
+.hide3 {
+  display: none;
+}
+
+.show {
+  display: unset;
 }
 /*# sourceMappingURL=main.css.map */
