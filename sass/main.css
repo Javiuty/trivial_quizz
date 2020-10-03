@@ -1,6 +1,8 @@
 :root {
   --color-primary: #131932;
   --color-secondary: #0eca9a;
+  --color-tertiary: #d4d5d8;
+  --color-bg: #eaf0f3;
 }
 
 * {
@@ -14,5 +16,77 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.content {
+  border: 3px solid black;
+  height: 74rem;
+  width: 36rem;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: var(--color-primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  border: 2px solid green;
+}
+
+.categories {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+  border: 2px solid orangered;
+  background-color: var(--color-bg);
+}
+
+.categories__header {
+  padding: 1rem 1rem;
+  color: 000;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categories__header h3 {
+  color: var(--color-secondary);
+  background-color: #c1e8f1;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.categories__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.categories__body svg {
+  width: 4rem;
+  height: 4rem;
 }
 /*# sourceMappingURL=main.css.map */

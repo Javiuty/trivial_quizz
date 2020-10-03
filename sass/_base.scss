@@ -1,6 +1,9 @@
 :root {
   --color-primary: #131932;
   --color-secondary: #0eca9a;
+  --color-tertiary: #d4d5d8;
+
+  --color-bg: #eaf0f3;
 }
 
 * {
@@ -15,4 +18,17 @@ html {
 }
 
 body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.content {
+  border: 3px solid black;
+  height: 74rem;
+  width: 36rem;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: var(--color-primary);
+
+  display: flex;
+  flex-direction: column;
 }

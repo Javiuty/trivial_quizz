@@ -1,0 +1,42 @@
+.header {
+  flex: 0 0 30%;
+  border: 2px solid green;
+}
+
+.categories {
+  flex: 0 0 70%;
+  border: 2px solid orangered;
+  background-color: var(--color-bg);
+
+  &__header {
+    padding: 1rem 1rem;
+    color: 000;
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+    }
+
+    h3 {
+      color: var(--color-secondary);
+      background-color: #c1e8f1;
+      padding: 0.5rem 0.8rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}

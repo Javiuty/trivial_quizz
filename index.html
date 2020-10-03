@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <title>Quizz</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <h1>Hola amigos</h1>
+    <main class="content">
+      <header class="header">
+        <img src="" alt="" class="header__logo" />
+        <h1 class="header__title">Welcome to the Quizz</h1>
+      </header>
+      <section class="categories">
+        <div class="categories__header">
+          <h2>Top Quiz Categories</h2>
+          <h3>View All</h3>
+        </div>
+        <div class="categories__body">
+          <div class="categories__category">
+            <svg class="icon-science">
+              <use xlink:href="./img/sprite.svg#icon-bug"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./js/script.js"></script>
   </body>
 </html>
